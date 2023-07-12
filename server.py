@@ -15,6 +15,7 @@ def checkConn():
             sock.sendto(str(address[1]).encode('ascii'), address)
             clients.append(address)
         returnVal = data.decode('ascii')
+        print(returnVal)
         for i in clients:
             if i != address:
                 sock.sendto(returnVal.encode('ascii'), i)
