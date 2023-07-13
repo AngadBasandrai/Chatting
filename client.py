@@ -4,7 +4,7 @@ import playsound
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-sock.connect(('192.168.1.14', 55555))
+sock.connect(('117.245.231.25', 5555))
 
 name = input("Type your name-> ")
 sock.send(' '.encode('ascii'))
